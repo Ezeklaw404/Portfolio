@@ -37,14 +37,14 @@ function Places() {
       <Container>
         <Grid container item xs={12} lg={6}>
           <MKTypography variant="h3" mb={6}>
-            Check my latest blogposts
+            Check out my projects
           </MKTypography>
         </Grid>
         <Grid container spacing={3}>
           <Grid item xs={12} sm={6} lg={3}>
             <TransparentBlogCard
               image={post1}
-              title="Rover raised $65 million"
+              title="Cthuhtlu Card Game"
               description="Finding temporary housing for your dog should be as easy as renting an Airbnb. That’s the idea behind Rover ..."
               action={{
                 type: "internal",
@@ -57,7 +57,7 @@ function Places() {
           <Grid item xs={12} sm={6} lg={3}>
             <TransparentBlogCard
               image={post2}
-              title="MateLabs machine learning"
+              title="Galaga clone"
               description="If you’ve ever wanted to train a machine learning model and integrate it with IFTTT, you now can with ..."
               action={{
                 type: "internal",
@@ -70,7 +70,7 @@ function Places() {
           <Grid item xs={12} sm={6} lg={3}>
             <TransparentBlogCard
               image={post3}
-              title="MateLabs machine learning"
+              title="Conways Game of Life"
               description="If you’ve ever wanted to train a machine learning model and integrate it with IFTTT, you now can with ..."
               action={{
                 type: "internal",
@@ -83,7 +83,7 @@ function Places() {
           <Grid item xs={12} sm={6} lg={3}>
             <BackgroundBlogCard
               image={post4}
-              title="Flexible work hours"
+              title="Notepad++#"
               description="Rather than worrying about switching offices every couple years, you stay in the same place."
               action={{
                 type: "internal",
