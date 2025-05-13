@@ -33,7 +33,7 @@ import Footer from "pages/AboutMe/sections/Footer";
 import routes from "routes";
 
 // Images
-import bgImage from "assets/images/techBackground.jpg";
+import bgImage from "assets/images/mother.png";
 
 function AboutMe() {
   return (

@@ -21,7 +21,7 @@ import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
 
 // Images
-import bgImage from "assets/images/techBackground.jpg";
+import bgImage from "assets/images/comSci.png";
 
 function Contact() {
   return (

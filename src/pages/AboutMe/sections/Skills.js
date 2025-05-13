@@ -25,8 +25,7 @@ import MKTypography from "components/MKTypography";
 // import TransparentBlogCard from "examples/Cards/BlogCards/TransparentBlogCard";
 import BackgroundBlogCard from "examples/Cards/BlogCards/BackgroundBlogCard";
 
-
-// import galaga from "assets/images/portfolioGames/galaga.PNG";
+import bgImage from "assets/images/curcuit.jpg";
 
 
 function Skills() {
@@ -42,6 +41,7 @@ function Skills() {
           <Grid item xs={12} sm={6} lg={3}>
             <BackgroundBlogCard
             title="Front-End"
+            image={bgImage}
             description={
               <ul>
                 <li>HTML</li>
@@ -56,6 +56,7 @@ function Skills() {
           <Grid item xs={12} sm={6} lg={3}>
             <BackgroundBlogCard
             title="Back-End"
+            image={bgImage}
             description={
               <ul>
                 <li>Node.js</li>
@@ -69,6 +70,7 @@ function Skills() {
           <Grid item xs={12} sm={6} lg={3}>
             <BackgroundBlogCard
             title="Databases"
+            image={bgImage}
             description={
               <ul>
                 <li>MySQL</li>
@@ -80,6 +82,7 @@ function Skills() {
           <Grid item xs={12} sm={6} lg={3}>
             <BackgroundBlogCard
               title="Deployment & DevOps"
+              image={bgImage}
               description={
                 <ul>
                   <li>GitHub</li>

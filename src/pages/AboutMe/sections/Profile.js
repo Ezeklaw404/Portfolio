@@ -32,7 +32,7 @@ function Profile() {
           <Grid container justifyContent="center" py={6}>
             <Grid item xs={12} md={7} mx={{ xs: "auto", sm: 6, md: 1 }}>
               <MKBox display="flex" justifyContent="space-between" alignItems="center" mb={1}>
-                <MKTypography variant="h3">Ezekiel Andreason</MKTypography>
+                <MKTypography variant="h3">About Me</MKTypography>
               </MKBox>
               <MKTypography variant="body1" fontWeight="light" color="text">
 Hello! I am <strong>Ezekiel Andreason,</strong> currently studying at Neumont the College of Computer Science.
