@@ -44,7 +44,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 
 // Pages
 
-import Author from "layouts/pages/landing-pages/author";
+import AboutMe from "layouts/AboutMe";
 
 const routes = [
   {
@@ -57,9 +57,9 @@ const routes = [
         name: "Home page",
         collapse: [
           {
-            name: "author",
+            name: "about me",
             route: "/",
-            component: <Author />,
+            component: <AboutMe />,
           },
         ],
       },

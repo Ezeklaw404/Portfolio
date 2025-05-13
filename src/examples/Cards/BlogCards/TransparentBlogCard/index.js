@@ -28,11 +28,13 @@ import MuiLink from "@mui/material/Link";
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
 
+
 function TransparentBlogCard({ image, title, description, action }) {
   const cardActionStyles = {
     display: "flex",
+    flexWrap: "wrap",
     alignItems: "center",
-    width: "max-content",
+    width: "100%",
 
     "& .material-icons, .material-icons-round,": {
       transform: `translateX(2px)`,
@@ -74,70 +76,69 @@ function TransparentBlogCard({ image, title, description, action }) {
       />
     </MKBox>
   );
-
   return (
     <Card
-      sx={{
-        background: "transparent",
-        boxShadow: "none",
-        overflow: "visible",
-      }}
-    >
-      {action.type === "internal" ? (
-        <Link to={action.route}>{imageTemplate}</Link>
+  sx={{
+    background: "transparent",
+    boxShadow: "none",
+    overflow: "visible",
+  }}
+>
+  {action ? (
+    action.type === "internal" ? (
+      <Link to={action.route}>{imageTemplate}</Link>
+    ) : (
+      <MuiLink href={action.route} target="_blank" rel="noreferrer">
+        {imageTemplate}
+      </MuiLink>
+    )
+  ) : (
+    imageTemplate
+  )}
+  <MKBox pt={2} pb={3}>
+    {action ? (
+      action.type === "internal" ? (
+        <Link to={action.route} sx={cardActionStyles}>
+          <MKTypography variant="h5" gutterBottom>
+            {title}
+          </MKTypography>
+        </Link>
       ) : (
-        <MuiLink href={action.route} target="_blank" rel="noreferrer">
-          {imageTemplate}
+        <MuiLink href={action.route} target="_blank" rel="noreferrer" sx={cardActionStyles}>
+          <MKTypography variant="h5" gutterBottom>
+            {title}
+          </MKTypography>
         </MuiLink>
-      )}
-      <MKBox pt={2} pb={3}>
-        {action.type === "internal" ? (
-          <Link to={action.route} sx={cardActionStyles}>
-            <MKTypography variant="h5" gutterBottom>
-              {title}
-            </MKTypography>
-          </Link>
-        ) : (
-          <MuiLink href={action.route} target="_blank" rel="noreferrer" sx={cardActionStyles}>
-            <MKTypography variant="h5" gutterBottom>
-              {title}
-            </MKTypography>
-          </MuiLink>
-        )}
-        <MKTypography variant="body2" component="p" color="text" mb={3}>
-          {description}
-        </MKTypography>
-        {action.type === "internal" ? (
-          <MKTypography
-            component={Link}
-            to={action.route}
-            variant="body2"
-            fontWeight="regular"
-            color={action.color}
-            textTransform="capitalize"
-            sx={cardActionStyles}
-          >
-            {action.label}
-            <Icon sx={{ fontWeight: "bold" }}>arrow_forward</Icon>
-          </MKTypography>
-        ) : (
-          <MKTypography
-            component={MuiLink}
-            href={action.route}
-            target="_blank"
-            rel="noreferrer"
-            variant="body2"
-            fontWeight="regular"
-            color={action.color}
-            textTransform="capitalize"
-            sx={cardActionStyles}
-          >
-            {action.label}
-            <Icon sx={{ fontWeight: "bold" }}>arrow_forward</Icon>
-          </MKTypography>
-        )}
-      </MKBox>
-    </Card>
+      )
+    ) : (
+      <MKTypography variant="h5" gutterBottom>
+        {title}
+      </MKTypography>
+    )}
+
+    <MKTypography variant="body2" component="p" color="text" mb={3}>
+      {description}
+    </MKTypography>
+
+    {action && (
+      <MKTypography
+        component={action.type === "internal" ? Link : MuiLink}
+        to={action.type === "internal" ? action.route : undefined}
+        href={action.type !== "internal" ? action.route : undefined}
+        target={action.type !== "internal" ? "_blank" : undefined}
+        rel={action.type !== "internal" ? "noreferrer" : undefined}
+        variant="body2"
+        fontWeight="regular"
+        color={action.color}
+        textTransform="capitalize"
+        sx={cardActionStyles}
+      >
+        {action.label}
+        <Icon sx={{ fontWeight: "bold" }}>arrow_forward</Icon>
+      </MKTypography>
+    )}
+  </MKBox>
+</Card>
   );
 }
 
@@ -161,8 +162,8 @@ TransparentBlogCard.propTypes = {
       "light",
       "dark",
       "text",
-    ]).isRequired,
-  }).isRequired,
+    ]),
+  }),
 };
 
 export default TransparentBlogCard;
