@@ -50,7 +50,7 @@ From the beginning of my programming journey, I’ve aimed to build a strong fou
     Writers of UoPeople (2024)
   </a>
   , knowing multiple programming languages increases flexibility, opens up broader job opportunities, and enhances your ability to choose the right tools for the task.
-  I’ve built projects using JavaScript, Python, Java, C#, SQL, and more, giving me both the technical skills and adaptability that employers look for.
+  I’ve built projects using <strong>JavaScript, Python, Java, C#, SQL, and more,</strong> giving me both the technical skills and adaptability that employers look for.
   <br />
   <br />
   Following this 
