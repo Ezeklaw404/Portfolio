@@ -39,6 +39,8 @@ import mine from "assets/images/portfolioGames/mineSweeper.PNG";
 import pong from "assets/images/portfolioGames/pong.PNG";
 import notes from "assets/images/portfolioGames/notes++.PNG";
 import GameofLife from "assets/images/portfolioGames/GoL.gif";
+import Alchemy from "assets/images/portfolioGames/kitchen-alchemy.png";
+import AlchemyLogo from "assets/images/portfolioGames/kitchen-alchemy-logo.png";
 
 function Projects() {
   return (
@@ -72,7 +74,7 @@ function Projects() {
           </Grid>
 
           <Grid item xs={12} sm={6} lg={3}>
-            <BackgroundBlogCard
+            <TransparentBlogCard
               image={notes}
               title="Notes++"
               description={<>
@@ -128,7 +130,7 @@ function Projects() {
           </Grid>
 
           <Grid item xs={12} sm={6} lg={3}>
-            <BackgroundBlogCard
+            <TransparentBlogCard
               image={digit}
               title="Digit Recognizer"
               description={<>
@@ -165,7 +167,7 @@ function Projects() {
           </Grid>
 
           <Grid item xs={12} sm={6} lg={3}>
-            <BackgroundBlogCard
+            <TransparentBlogCard
               image={pong}
               title="Pong"
               description={<>
@@ -181,6 +183,47 @@ function Projects() {
               }}
             />
           </Grid>
+
+          <Grid item xs={12} sm={6} lg={3}>
+            <TransparentBlogCard
+              image={mine}
+              title="PuzzleTD"
+              description={<>
+              PuzzleTD is a tower defense game where players strategically place shape-based towers to stop waves of enemies.
+              It features multiple levels and buildable defensive towers that encourage tactical planning and replayability.
+              <br />
+              <strong>Technologies:</strong> Unity, C#
+              </>}
+              action={{
+                type: "external",
+                route: "https://github.com/Ezeklaw404/PuzzleTD",
+                color: "info",
+                label: "View Project",
+              }}
+            />
+          </Grid>
+
+                    <Grid item xs={12} sm={6} lg={3}>
+            <TransparentBlogCard
+              image={mine}
+              title="Kitchen Alchemy"
+              description={<>
+              KitchenAlchemy is a mobile recipe app that tracks pantry and fridge ingredients to recommend meals you can actually make.
+              It filters recipes based on what you have on hand, helping reduce food waste and simplify meal planning.
+              <br />
+              <strong>Technologies:</strong> Flutter, Dart, PostgreSQL, Firebase
+              </>}
+              action={{
+                type: "external",
+                route: "https://github.com/Ezeklaw404/Kitchen-Alchemy",
+                color: "info",
+                label: "View Project",
+              }}
+            />
+          </Grid>
+
+
+
         </Grid>
       </Container>
     </MKBox>
