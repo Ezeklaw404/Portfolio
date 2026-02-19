@@ -23,7 +23,6 @@ import MKTypography from "components/MKTypography";
 
 // Material Kit 2 React components
 import TransparentBlogCard from "examples/Cards/BlogCards/TransparentBlogCard";
-import BackgroundBlogCard from "examples/Cards/BlogCards/BackgroundBlogCard";
 
 // Images
 // import post1 from "assets/images/examples/testimonial-6-2.jpg";
@@ -40,7 +39,8 @@ import pong from "assets/images/portfolioGames/pong.PNG";
 import notes from "assets/images/portfolioGames/notes++.PNG";
 import GameofLife from "assets/images/portfolioGames/GoL.gif";
 import Alchemy from "assets/images/portfolioGames/kitchen-alchemy.png";
-import AlchemyLogo from "assets/images/portfolioGames/kitchen-alchemy-logo.png";
+import TD from "assets/images/portfolioGames/puzzle-td.png";
+// import AlchemyLogo from "assets/images/portfolioGames/kitchen-alchemy-logo.png";
 
 function Projects() {
   return (
@@ -186,7 +186,7 @@ function Projects() {
 
           <Grid item xs={12} sm={6} lg={3}>
             <TransparentBlogCard
-              image={mine}
+              image={TD}
               title="PuzzleTD"
               description={<>
               PuzzleTD is a tower defense game where players strategically place shape-based towers to stop waves of enemies.
@@ -205,7 +205,7 @@ function Projects() {
 
                     <Grid item xs={12} sm={6} lg={3}>
             <TransparentBlogCard
-              image={mine}
+              image={Alchemy}
               title="Kitchen Alchemy"
               description={<>
               KitchenAlchemy is a mobile recipe app that tracks pantry and fridge ingredients to recommend meals you can actually make.
