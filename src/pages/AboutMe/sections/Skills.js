@@ -46,6 +46,7 @@ function Skills() {
               <ul>
                 <li>HTML</li>
                 <li>JavaScript</li>
+                <li>Flutter</li>
                 <li>React</li>
                 <li>Vue.js</li>
                 <li>.NET MAUI</li>
@@ -63,6 +64,7 @@ function Skills() {
                 <li>Express.js</li>
                 <li>C#</li>
                 <li>Java</li>
+                <li>Dart</li>
               </ul>
             }
             />
@@ -75,6 +77,8 @@ function Skills() {
               <ul>
                 <li>MySQL</li>
                 <li>MongoDB</li>
+                <li>PostgreSQL</li>
+                <li>Firebase</li>
               </ul>
             }
             />
@@ -86,8 +90,8 @@ function Skills() {
               description={
                 <ul>
                   <li>GitHub</li>
-                  <li>Vercel</li>
                   <li>Docker</li>
+                  <li>Vercel</li>
                 </ul>
               }
             />

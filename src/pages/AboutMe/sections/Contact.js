@@ -72,7 +72,8 @@ function Contact() {
                     ml={2}
                     fontWeight="regular"
                   >
-                    (+1) 111 222 3333
+                    (385) 985-3404
+                  
                   </MKTypography>
                 </MKBox>
                 <MKBox display="flex" color="white" p={1}>
