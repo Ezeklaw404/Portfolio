@@ -8,7 +8,7 @@
 //   title       - project name
 //   description - 1-3 sentences on what it does / why it matters
 //   stack       - array of tech used (shows as tags)
-//   status      - "shipped" | "in-progress" | "archived"
+//   status      - "built" | "finished" | "experiment" | "side project" | "prototype"
 //   github      - link to repo (or "" to hide the button)
 //   live        - link to live demo (or "" to hide the button)
 //   featured    - true puts it in the larger card style
@@ -57,7 +57,7 @@ export const projects = [
     description:
       'A simplified Galaga clone where you fly through space shooting alien ships while dodging their attacks. Endless gameplay with a persistent local high score.',
     stack: ['Java', 'JPanel'],
-    status: 'prototype',
+    status: 'side project',
     github: 'https://github.com/Ezeklaw404/Shooter',
     live: '',
     featured: false,
@@ -68,7 +68,7 @@ export const projects = [
     description:
       'A simple and clean notes app that lets users create, edit, and delete notes to keep everything organized.',
     stack: ['C#', '.NET MAUI', 'Blazor Hybrid', 'JavaScript', 'HTML', 'CSS'],
-    status: 'side project',
+    status: 'finished',
     github: 'https://github.com/tristancable/NotesPlusPlus',
     live: '',
     featured: false,
@@ -86,6 +86,29 @@ export const projects = [
     image: gameOfLife,
   },
   {
+    title: 'Cthulhu Card Game',
+    description:
+      'A four-player matching card game where players flip two cards at a time to find pairs, wrapped in the eerie theme of classic H.P. Lovecraft horrors.',
+    stack: ['Java', 'Android Studio'],
+    status: 'finished',
+    github: 'https://github.com/Ezeklaw404/MatchingCardGameHP',
+    live: '',
+    featured: false,
+    portrait: true,
+    image: cthulhuCards,
+  },
+  {
+    title: 'Website Game Launcher',
+    description:
+      'A sleek, web-based platform featuring a variety of built-in mini-games. Designed with clean aesthetics and simplicity in mind for an intuitive browser gaming experience.',
+    stack: ['EJS', 'JavaScript', 'CSS', 'HTML'],
+    status: 'finished',
+    github: 'https://github.com/tristancable/WebsiteGameLauncher',
+    live: '',
+    featured: false,
+    image: websiteLauncher,
+  },
+  {
     title: 'Digit Recognizer',
     description:
       'Draw any digit on a canvas and a trained AI model identifies it in real time.',
@@ -97,34 +120,11 @@ export const projects = [
     image: digitRecognizer,
   },
   {
-    title: 'Website Game Launcher',
-    description:
-      'A sleek, web-based platform featuring a variety of built-in mini-games. Designed with clean aesthetics and simplicity in mind for an intuitive browser gaming experience.',
-    stack: ['EJS', 'JavaScript', 'CSS', 'HTML'],
-    status: 'side project',
-    github: 'https://github.com/tristancable/WebsiteGameLauncher',
-    live: '',
-    featured: false,
-    image: websiteLauncher,
-  },
-  {
-    title: 'Cthulhu Card Game',
-    description:
-      'A four-player matching card game where players flip two cards at a time to find pairs, wrapped in the eerie theme of classic H.P. Lovecraft horrors.',
-    stack: ['Java', 'Android Studio'],
-    status: 'prototype',
-    github: 'https://github.com/Ezeklaw404/MatchingCardGameHP',
-    live: '',
-    featured: false,
-    portrait: true,
-    image: cthulhuCards,
-  },
-  {
     title: 'Pong',
     description:
       'A two-player Pong clone with keyboard controls, basic sound effects, and a classic minimalist layout.',
     stack: ['Java', 'JPanel'],
-    status: 'prototype',
+    status: 'side project',
     github: 'https://github.com/Ezeklaw404/pong',
     live: '',
     featured: false,

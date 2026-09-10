@@ -70,20 +70,6 @@ export default function Hero() {
           </p>
           <p className="text-muted">{'}'}</p>
 
-          <div className="mt-10 flex flex-wrap gap-4">
-            <a
-              href="#projects"
-              className="px-5 py-2.5 rounded-md bg-accent text-bg font-sans font-semibold text-sm hover:bg-accent/90 transition-colors"
-            >
-              View Projects
-            </a>
-            <a
-              href="#contact"
-              className="px-5 py-2.5 rounded-md border border-border text-text font-sans font-semibold text-sm hover:border-accent hover:text-accent transition-colors"
-            >
-              Get In Touch
-            </a>
-          </div>
         </div>
 
         {/* status bar */}
